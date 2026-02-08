@@ -263,16 +263,36 @@
 
 // console.log("Even numbers count:", count);
 
-let hour = 7; 
+// let hour = 7; 
 
-if (hour >= 1 && hour <= 6) {
-    console.log("Good Morning");
-} else if (hour >= 7 && hour <= 12) {
-    console.log("Morning");
-} else if (hour >= 13 && hour <= 16) {
-    console.log("Good Afternoon");
-} else if (hour >= 17 && hour <= 19) {
-    console.log("Good Evening");
-} else {
-    console.log("Good Night");
+// if (hour >= 1 && hour <= 6) {
+//     console.log("Good Morning");
+// } else if (hour >= 7 && hour <= 12) {
+//     console.log("Morning");
+// } else if (hour >= 13 && hour <= 16) {
+//     console.log("Good Afternoon");
+// } else if (hour >= 17 && hour <= 19) {
+//     console.log("Good Evening");
+// } else {
+//     console.log("Good Night");
+// }
+
+
+let basicSalary=60000;
+let bonusPercentage=10;
+
+function calculateSalary(basicSalary,bonusPercentage){
+    let bonus=(basicSalary * bonusPercentage) /100;
+    let grossSalary=basicSalary + bonus;
+    let tax=grossSalary * 0.05;
+    let finalSalary=grossSalary - tax;
+
+    console.log("Basic Salary:", basicSalary);
+    console.log("Bonus Percentage:", bonusPercentage + "%");
+    console.log("Bonus Amount:", bonus);
+    console.log("Gross Salary:", grossSalary);
+    console.log("Tax Deduction (5%):", tax);
+    console.log("Final Salary:", finalSalary);
+
+    return finalSalary;
 }
