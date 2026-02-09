@@ -1,8 +1,4 @@
-// let a=12;
-// let b=13;
 
-// let c=++a + ++b;
-// console.log(c)
 
 // Employee Merge System (Spread Operator)
 let empBasic={name:"Naveen",role:"Trainee",salary:20000}
